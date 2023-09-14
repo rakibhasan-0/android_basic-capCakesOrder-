@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Flavor">
+
+    <RadioGroup
+        android:id="@+id/flavor_button"
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:layout_width="117dp"
+            android:layout_height="wrap_content"
+            android:text="Vanilla"
+            android:id="@+id/vanila"
+            android:textColor="#000000"
+            tools:layout_editor_absoluteX="120dp"
+            tools:layout_editor_absoluteY="101dp" />
+
+        <RadioButton
+            android:layout_width="117dp"
+            android:layout_height="wrap_content"
+            android:text="Chocolate"
+            android:id="@+id/chocolate"
+            android:textColor="#000000"
+            tools:layout_editor_absoluteX="120dp"
+            tools:layout_editor_absoluteY="101dp" />
+
+
+        <RadioButton
+            android:layout_width="117dp"
+            android:layout_height="wrap_content"
+            android:text="Red Velvet"
+            android:id="@+id/red_velvet"
+            android:textColor="#000000"
+            tools:layout_editor_absoluteX="120dp"
+            tools:layout_editor_absoluteY="101dp" />
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salted Caramel"
+            android:textColor="#000000"
+            android:id="@+id/salted_caramel"
+            tools:layout_editor_absoluteX="120dp"
+            tools:layout_editor_absoluteY="101dp" />
+
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:layout_width="405dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="212dp"
+            android:background="#D4CFE1"
+            android:gravity="center_horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/flavor_submit_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        android:text="Next"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/black"
+        app:cornerRadius="10dp"
+        app:strokeWidth="2dp"
+        app:strokeColor="@color/material_dynamic_primary30"
+        app:backgroundTint="#5ABD1C"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout >

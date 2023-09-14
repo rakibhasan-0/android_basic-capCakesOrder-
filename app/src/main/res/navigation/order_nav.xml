@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/order_nav"
+    app:startDestination="@id/home2">
+
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.example.cupcakeorder.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home2_to_flavor"
+            app:destination="@id/flavor" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/flavor"
+        android:name="com.example.cupcakeorder.Flavor"
+        android:label="fragment_flavor"
+        tools:layout="@layout/fragment_flavor" >
+        <action
+            android:id="@+id/action_flavor_to_date"
+            app:destination="@id/date" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/date"
+        android:name="com.example.cupcakeorder.Date"
+        android:label="fragment_date"
+        tools:layout="@layout/fragment_date">
+
+        <action
+            android:id="@+id/action_date_to_summary"
+            app:destination="@id/summary" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/summary"
+        android:name="com.example.cupcakeorder.Summary"
+        android:label="fragment_summary"
+        tools:layout="@layout/fragment_summary" >
+        <action
+            android:id="@+id/action_summary_to_home2"
+            app:destination="@id/home2" />
+    </fragment>
+
+</navigation>
